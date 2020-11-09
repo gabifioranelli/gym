@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Gabi",
+      "birth": 665712000000,
+      "gender": "F",
+      "services": "crossfit",
+      "created_at": 1604950746020,
+      "avatar_url": "http://www.google.com"
+    },
+    {
+      "id": 2,
+      "name": "Gabi",
+      "birth": 665712000000,
+      "gender": "F",
+      "services": "crossfit",
+      "created_at": 1604950767252,
+      "avatar_url": "http://www.google.com"
+    }
+  ]
+}
