@@ -1,6 +1,19 @@
 const fs = require('fs')
 const data = require('./data.json')
 
+// show
+exports.show = function(req, res) {
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function (instructor){
+        return instructor.id == id
+    })
+
+    if (!foundInstructor) return res.send("Instructor not found!")
+
+    return res.send(foundInstructornet)
+}
+
 // create
 exports.post = function (req, res) {
 
@@ -28,11 +41,9 @@ exports.post = function (req, res) {
         avatar_url,
     })
 
-    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {    
         if (err) return res.send("Write error!")
 
         return res.redirect("/instructors")
     })
-
-    // return res.send(req.body)
 }
