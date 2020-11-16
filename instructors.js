@@ -79,8 +79,9 @@ exports.edit = function (req, res) {
     
     date(foundInstructor.birth)
 
-    return res.render('instructors/edit', { instructor })
+    return res.render('instructors/edit', {instructor})
 }
+
 
 // PUT
 
